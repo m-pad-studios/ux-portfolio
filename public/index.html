@@ -16,12 +16,23 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-                   <div id="navbar">
-                        <a style="float: left;" href="/">Michael Parker</a>
-                <a class="active" href="#">Resume</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" >Contact</a>
-              </div>
+        
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="/" class="navbar-brand">Michael Parker</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                    </ul>
+                    </div>
+                </div>
+            </nav>
    <!-- Header--> 
             <header class="bg-dark py-5">                                
 
