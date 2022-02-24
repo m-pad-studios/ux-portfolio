@@ -4508,7 +4508,7 @@ textarea.form-control-lg {
 }
 
 .card {
-  
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -11338,7 +11338,7 @@ My Styles
 #navbar {
   overflow: hidden;
   background-color: #212529;
-z-index: 0;
+
 }
 
 #navbar a {
