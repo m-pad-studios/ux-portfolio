@@ -11385,6 +11385,9 @@ My Styles
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
+    .landing-page {
+      padding-right: 2px;
+    }
     #navbar {
       overflow: hidden;
       background-color: #212529;
@@ -11433,6 +11436,9 @@ My Styles
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) 
   and (orientation: portrait) {
+    .landing-page {
+      padding-right: 2px;
+    }
     #navbar {
       overflow: hidden;
       background-color: #212529;
@@ -11812,3 +11818,4 @@ My Styles
       padding-top: 60px;
     }
 }
+
