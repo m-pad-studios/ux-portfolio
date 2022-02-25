@@ -78,7 +78,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -89,6 +89,10 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+p{
+  color: #4A6C7C;
+  
+}
 hr {
   margin: 5rem 0;
   color: inherit;
@@ -106,6 +110,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  font-family: Oswald;
+  color: #4A6C7C;
 }
 
 h1, .h1 {
