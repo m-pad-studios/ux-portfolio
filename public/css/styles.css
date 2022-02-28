@@ -11383,8 +11383,23 @@ My Styles
   padding-top: 60px;
 }
 
+@media(max-width: 360px)
+{
+  #carouselExampleControls {
+    padding-right: 0px;
+  }
+  #carouselExampleControls2 {
+    padding-right: 0px;
+  }
+  #landing-page {
+    padding-left: 30px;
+  }
+  p {
+   margin-left:10px;
+  }
+}
 
-@media(max-width: 450px){
+@media(min-width: 450px){
   #landing-page {
   padding-left: 40px;
   }
@@ -11397,12 +11412,7 @@ My Styles
   }
 }
 
-@media(max-width: 390px)
-{
-  #landing-page {
-    padding-left: 30px;
-  }
-}
+
 
 @media(min-width: 700px)
 {
