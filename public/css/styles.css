@@ -7498,7 +7498,7 @@ textarea.form-control-lg {
 
 .py-5 {
 
-  padding-bottom: 3rem !important;
+
 }
 
 .pt-0 {
@@ -11341,6 +11341,11 @@ hr.style-eight:after {
 My Styles
 
 */
+
+#final-img {
+  background-image: url("C:\ux-portfolio\public\mock-1.png");
+  background-color: aqua;
+}
 #navbar {
   overflow: hidden;
   background-color: #212529;
@@ -11438,5 +11443,6 @@ margin-right: 400px;
   #frame {
     height: 500px;
     width: 500px;
+    padding-right: 200px;
   }
 }
