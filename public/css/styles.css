@@ -11384,11 +11384,14 @@ My Styles
 }
 
 
-@media(min-width: 400px){
+@media(max-width: 450px){
   #landing-page {
   padding-left: 40px;
   }
+#proto {
+  margin-left: 150px;
 
+}
   .row{
     padding-left: 15px;
   }
@@ -11409,5 +11412,16 @@ My Styles
 
   .row {
 padding-left: 75px;
+  }
+}
+
+@media(min-width: 1000px)
+{
+  #proto{
+margin-right: 400px;
+  }
+  #frame {
+    height: 500px;
+    width: 500px;
   }
 }
