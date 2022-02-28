@@ -11422,6 +11422,8 @@ margin-right: 400px;
   }
   #carousel-in {
     padding-left: 500px;
+    padding-bottom: 25px;
+    padding-top: 20px;
   }
   #frame {
     height: 500px;
