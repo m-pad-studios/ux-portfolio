@@ -11402,6 +11402,10 @@ My Styles
   p {
    margin-left:10px;
   }
+  #frame {
+    height: 500px;
+    padding-left: 30px;
+  }
 }
 
 @media(min-width: 450px){
