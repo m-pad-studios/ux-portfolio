@@ -11341,7 +11341,9 @@ hr.style-eight:after {
 My Styles
 
 */
-
+.hideme {
+  opacity: 0;
+}
 #logo-img {
   padding-bottom: 25px;
 }
