@@ -11342,6 +11342,10 @@ My Styles
 
 */
 
+#logo-img {
+  padding-bottom: 25px;
+}
+
 #final-img {
   background-image: url("C:\ux-portfolio\public\mock-1.png");
   background-color: aqua;
