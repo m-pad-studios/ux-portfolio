@@ -11341,6 +11341,10 @@ hr.style-eight:after {
 My Styles
 
 */
+#minus-pad {
+  padding-left: 200px;
+}
+
 .hideme {
   opacity: 0;
 }
@@ -11417,6 +11421,10 @@ My Styles
         padding-right: 15px;
        
     
+      }
+
+      #minus-pad {
+        padding-left: 25px;
       }
 }
 
