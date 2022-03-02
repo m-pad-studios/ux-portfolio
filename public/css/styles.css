@@ -11414,7 +11414,7 @@ My Styles
   }
 }
 
-@media(min-width: 450px){
+@media(min-width: 412px){
   #landing-page {
   padding-left: 40px;
   }
@@ -11424,6 +11424,13 @@ My Styles
 }
   .row{
     padding-left: 15px;
+  }
+
+  #me-about {
+height: 150px;
+    padding-right: 15px;
+   
+
   }
 }
 
