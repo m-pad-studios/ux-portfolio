@@ -11459,7 +11459,7 @@ My Styles
 
 }
 
-@media(min-width: 412px){
+@media(max-width: 414px){
   #landing-page {
   padding-left: 40px;
   }
@@ -11476,6 +11476,10 @@ height: 150px;
     padding-right: 15px;
    
 
+  }
+
+  #minus-pad {
+    padding-left: 25px;
   }
 }
 
