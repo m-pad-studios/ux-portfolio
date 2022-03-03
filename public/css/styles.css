@@ -11428,7 +11428,7 @@ My Styles
       }
 }
 
-@media(min-width: 375px)
+@media(max-width: 375px)
 {
   #carouselExampleControls {
     padding-right: 0px;

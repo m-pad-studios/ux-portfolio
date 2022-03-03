@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(function(){  // $(document).ready shorthand
-   $('.skills').fadeIn('slow');
- });
- 
- $(document).ready(function() {
-     
-     /* Every time the window is scrolled ... */
-     $(window).scroll( function(){
-     
-         /* Check the location of each desired element */
-         $('.hideme').each( function(i){
-             
-             var bottom_of_object = $(this).position().top + $(this).outerHeight();
-             var bottom_of_window = $(window).scrollTop() + $(window).height();
-             
-             /* If the object is completely visible in the window, fade it it */
-             if(bottom_of_object <= bottom_of_window){
-                 
-                 $(this).animate({'opacity':'1'},1500);
-                     
-             }
-             
-         }); 
-     
-     });
-     
- });
-        </script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a href="/" class="navbar-brand">Michael Parker</a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="float: right;">
-                        <span class="navbar-toggler-icon"style="float: right;"></span>
-                    </button>
-                    <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Modern Business - Start Bootstrap Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {  // $(document).ready shorthand
+            $('.skills').fadeIn('slow');
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.hideme').each(function (i) {
+
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_object <= bottom_of_window) {
+
+                        $(this).animate({ 'opacity': '1' }, 1500);
+
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand">Michael Parker</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    style="float: right;">
+                    <span class="navbar-toggler-icon" style="float: right;"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  
+
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html" style="float: right;">Contact</a>
                         </li>
@@ -64,332 +67,384 @@
                             <a class="nav-link active" href="#" style="float: right;">Resume</a>
                         </li>
                     </ul>
-                    </div>
                 </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5 bg-dark">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3" style="color: white;">Hey there, </h1>
-                                
-                                <p class="lead fw-normal mb-4" style="color: white;">I'm Mike, a passionate ux designer and coder. <br><br> My experiences in coding have been in free lance and academics. My ux design experience has been through a Google certification, Foundations of User Experience Design, and free lance. <br><br> Combined I have several years of coding and ux design experience. I have a goal to become a ux designer for a large company and be able to grow personally and professionally.</p>
-                                <div >
-                                                               <img src="me.jpg"  style="  border-radius: 25%;" id="me-about"/>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-              <!-- Team members section-->
-              <section class="py-5 bg-light" style="padding-top: 50px;">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder">My skill set</h2>
-                        <p class="lead fw-normal text-muted mb-5" id="skills">UX Designer & Coder</p>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="html5.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">HTML</h5>
-                                
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="css.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">CSS</h5>
-                              
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="bstrap.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Bootstrap</h5>
-                            
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-sm-0 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="js.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">JavaScript</h5>
-                             
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="node.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Node.js</h5>
-                              
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="python.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Python</h5>
-                        
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="django.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Django</h5>
-                          
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="data.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">SQL</h5>
-                            
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="data2.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">SQLite</h5>
-                           
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="github.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">GitHub</h5>
-                     
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="landscape.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">UX/UI Design</h5>
-                        
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="code.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Website Design</h5>
-                         
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="mobile.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Wireframing & Prototyping</h5>
-                        
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="globe.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">SEO</h5>
-                           
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-               <!-- Team members section-->
-               <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder" style="padding-top: 25px;">My tool belt</h2>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="visual.svg" alt="..." style="width: 225px; color: aliceblue;"/>
-                                <h5 class="fw-bolder">Visual Studio Code</h5>
-                                
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="figma.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Figma</h5>
-                              
-                            </div>
-                        </div>
-                        <div class="col mb-5 hideme">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="adobe.svg" alt="..." style="width: 225px;"/>
-                                <h5 class="fw-bolder">Adobe XD</h5>
-                            
-                            </div>
-                        </div>
-                    
-
-            </section>
-            <header class="py-5 bg-dark" style="height: 500px;">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5" style="padding-top: 100px;">
-                                <h1 class="fw-bolder mb-3" style="color: white;">My Life in Pictures</h1>
-                                <p class="lead fw-normal mb-4" style="color: white;">Below is a wall I put together. The little boy is my young nephew and the girl is my older sister. <br><br>I wanted to show my life, hobbies, and likes through photography, hope you enjoy.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- About section one-->
-            <section class="py-5 hideme">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="drive.png" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-6" id="minus-pad">
-                        <img class="img-fluid rounded mb-5 mb-lg-0" src="tn.png" style="height: 250px; width: 250px;"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="py-5 bg-light hideme" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-4"><img class="img-fluid rounded mb-5 mb-lg-0" src="wine.png" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="filler1.png" alt="..." style="height: 250px; width: 250px;"/>
-                        </div>
-                        <div class="col-lg-4" >
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="flex.png" style="height: 250px; width: 250px;"/>
-                            </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section two-->
-            <section class="py-5 hideme">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="wk2.png" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-6"  id="minus-pad">
-                        <img class="img-fluid rounded mb-5 mb-lg-0" src="wk.png" style="height: 250px; width: 250px;"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section three -->
-            <section class="py-5 bg-light hideme" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-4" ><img class="img-fluid rounded mb-5 mb-lg-0" src="lg.png" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-4" >
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="filler2.jpg"  style="height: 250px; width: 250px;"/>
-                        </div>
-                        <div class="col-lg-4" >
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="lg3.png"  style="height: 250px; width: 250px;"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                  <!-- About section four -->
-                  <section class="py-5 hideme">
-                    <div class="container px-5 my-5">
-                        <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                            <div class="col-lg-6 order-first order-lg-last">
-                                <img class="img-fluid rounded mb-5 mb-lg-0" src="dp.png" alt="..." style="height: 250px; width: 250px;"/></div>
-                            <div class="col-lg-6" id="minus-pad">
-                                <img class="img-fluid rounded mb-5 mb-lg-0" src="lg2.png" style="height: 250px; width: 250px;" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                      <!-- About section five -->
-            <section class="py-5 bg-light hideme" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-4"><img style="height: 250px; width: 250px;" class="img-fluid rounded mb-5 mb-lg-0" src="sm3.jpg" alt="..." /></div>
-                        <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="filler3.jpg" style="height: 250px; width: 250px;" />
-                        </div>
-                        <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="sm4.jpg" style="height: 250px; width: 250px;" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-              <!-- About section six -->
-              <section class="py-5 hideme">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="sm.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-6"  id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0" src="sm2.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-
-                    </div>
-                </div>
-            </section>
-
-            <header class="py-5 bg-dark" style="height: 500px;">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5" style="padding-top: 150px;">
-                                <h1 class="fw-bolder mb-3" style="color: white;">My Hobbies & Interests</h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-                     <!-- About section six -->
-                     <section class="py-5 hideme">
-                        <div class="container px-5 my-5">
-                            <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                                <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="spidey.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-                                <div class="col-lg-6"  id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0" src="incomplete.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-        
-                            </div>
-                        </div>
-                    </section>
-                                  <!-- About section five -->
-            <section class="py-5 bg-light hideme" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-4"><img style="height: 250px; width: 250px;" class="img-fluid rounded mb-5 mb-lg-0" src="wolf.jpg" alt="..." /></div>
-                        <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="filler4.jpg" style="height: 250px; width: 250px;" />
-                        </div>
-                        <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="mickey.jpg" style="height: 250px; width: 250px;" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-              <!-- About section six -->
-              <section class="py-5 hideme">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="stars.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-                        <div class="col-lg-6"  id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0" src="pokemon.jpg" alt="..." style="height: 250px; width: 250px;"/></div>
-
-                    </div>
-                </div>
-            </section>
-      
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5 bg-dark">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Michael Parker's Portfolio 2022</div></div>
-                    <div class="col-auto">
-                        <a href="https://github.com/m-pad-studios"><img src="ghub.png" style="border-radius: 50%; height: 75px; width: 75px;"/></a>
-                        <a href="https://www.linkedin.com/in/mike-parker-4baa70196/"><img src="linkedin.png" style="border-radius: 50%; height: 75px; width: 75px;"/></a>
- 
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5">
+                            <h1 class="fw-bolder mb-3" style="color: white;">Hey there, </h1>
+
+                            <p class="lead fw-normal mb-4" style="color: white;">I'm Mike, a passionate UX designer, and
+                                coder. <br><br> My experiences in coding have been in freelance and academics. My UX
+                                design experience has been through a Google certification, Foundations of User
+                                Experience Design, and freelance. <br><br> Combined I have several years of coding and
+                                UX design experience. I have a goal to become a UX designer for a large company and be
+                                able to grow personally and professionally.</p>
+                            <div>
+                                <img src="me.jpg" style="  border-radius: 25%;" id="me-about" />
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    
-    </body>
+        </header>
+        <!-- Team members section-->
+        <section class="py-5 bg-light" style="padding-top: 50px;">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="fw-bolder">My skill set</h2>
+                    <p class="lead fw-normal text-muted mb-5" id="skills">UX Designer & Coder</p>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 mb-5 mb-xl-0 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="html5.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">HTML</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="css.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">CSS</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="bstrap.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Bootstrap</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-sm-0 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="js.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">JavaScript</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="node.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Node.js</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="python.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Python</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="django.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Django</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="data.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">SQL</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="data2.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">SQLite</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="github.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">GitHub</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="landscape.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">UX/UI Design</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="code.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Website Design</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="mobile.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Wireframing & Prototyping</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="globe.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">SEO</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Team members section-->
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="fw-bolder" style="padding-top: 25px;">My tool belt</h2>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 mb-5 mb-xl-0 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="visual.svg" alt="..."
+                                style="width: 225px; color: aliceblue;" />
+                            <h5 class="fw-bolder">Visual Studio Code</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 mb-5 mb-xl-0 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="figma.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Figma</h5>
+
+                        </div>
+                    </div>
+                    <div class="col mb-5 hideme">
+                        <div class="text-center">
+                            <img class="img-fluid rounded-circle mb-4 px-4" src="adobe.svg" alt="..."
+                                style="width: 225px;" />
+                            <h5 class="fw-bolder">Adobe XD</h5>
+
+                        </div>
+                    </div>
+
+
+        </section>
+        <header class="py-5 bg-dark" style="height: 500px;">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5" style="padding-top: 100px;">
+                            <h1 class="fw-bolder mb-3" style="color: white;">My Life in Pictures</h1>
+                            <p class="lead fw-normal mb-4" style="color: white;">Below is a wall I put together. The
+                                little boy is my young nephew and the girl is my older sister. <br><br>I wanted to show
+                                my life, hobbies, and likes through photography, hope you enjoy.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About section one-->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px; ">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="drive.png" alt="..." style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-6" id="minus-pad">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="tn.png" style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light hideme" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-4"><img class="img-fluid rounded mb-5 mb-lg-0" src="wine.png" alt="..."
+                            style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="filler1.png" alt="..."
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="flex.png"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section two-->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="wk2.png" alt="..." style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-6" id="minus-pad">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="wk.png" style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section three -->
+        <section class="py-5 bg-light hideme" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-4"><img class="img-fluid rounded mb-5 mb-lg-0" src="lg.png" alt="..."
+                            style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="filler2.jpg"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="lg3.png"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section four -->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-6 order-first order-lg-last">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="dp.png" alt="..."
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                    <div class="col-lg-6" id="minus-pad">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="lg2.png"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section five -->
+        <section class="py-5 bg-light hideme" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-4"><img style="height: 250px; width: 250px;"
+                            class="img-fluid rounded mb-5 mb-lg-0" src="sm3.jpg" alt="..." /></div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="filler3.jpg"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="sm4.jpg"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section six -->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="sm.jpg" alt="..." style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-6" id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0" src="sm2.jpg"
+                            alt="..." style="height: 250px; width: 250px;" /></div>
+
+                </div>
+            </div>
+        </section>
+
+        <header class="py-5 bg-dark" style="height: 500px;">
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5" style="padding-top: 150px;">
+                            <h1 class="fw-bolder mb-3" style="color: white;">My Hobbies & Interests</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About section six -->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="spidey.jpg" alt="..." style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-6" id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="incomplete.jpg" alt="..." style="height: 250px; width: 250px;" /></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- About section five -->
+        <section class="py-5 bg-light hideme" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-4"><img style="height: 250px; width: 250px;"
+                            class="img-fluid rounded mb-5 mb-lg-0" src="wolf.jpg" alt="..." /></div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="filler4.jpg"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="mickey.jpg"
+                            style="height: 250px; width: 250px;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section six -->
+        <section class="py-5 hideme">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"
+                            src="stars.jpg" alt="..." style="height: 250px; width: 250px;" /></div>
+                    <div class="col-lg-6" id="minus-pad"><img class="img-fluid rounded mb-5 mb-lg-0" src="pokemon.jpg"
+                            alt="..." style="height: 250px; width: 250px;" /></div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Michael Parker's Portfolio 2022</div>
+                </div>
+                <div class="col-auto">
+                    <a href="https://github.com/m-pad-studios"><img src="ghub.png"
+                            style="border-radius: 50%; height: 75px; width: 75px;" /></a>
+                    <a href="https://www.linkedin.com/in/mike-parker-4baa70196/"><img src="linkedin.png"
+                            style="border-radius: 50%; height: 75px; width: 75px;" /></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
 </html>
