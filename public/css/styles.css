@@ -11428,6 +11428,37 @@ My Styles
       }
 }
 
+@media(min-width: 375px)
+{
+  #carouselExampleControls {
+    padding-right: 0px;
+  }
+  #carouselExampleControls2 {
+    padding-right: 0px;
+  }
+  #landing-page {
+    padding-left: 30px;
+  }
+  p {
+   margin-left:10px;
+  }
+  #frame {
+    height: 500px;
+    padding-left: 30px;
+  }
+  #me-about {
+    height: 150px;
+        padding-right: 15px;
+       
+    
+      }
+
+      #minus-pad {
+        padding-left: 25px;
+      }
+
+}
+
 @media(min-width: 412px){
   #landing-page {
   padding-left: 40px;

@@ -24,7 +24,7 @@
              var bottom_of_window = $(window).scrollTop() + $(window).height();
              
              /* If the object is completely visible in the window, fade it it */
-             if( bottom_of_window > bottom_of_object ){
+             if(bottom_of_object <= bottom_of_window){
                  
                  $(this).animate({'opacity':'1'},1500);
                      
@@ -199,7 +199,7 @@
                <section class="py-5 bg-light">
                 <div class="container px-5 my-5">
                     <div class="text-center">
-                        <h2 class="fw-bolder">My tool belt</h2>
+                        <h2 class="fw-bolder" style="padding-top: 25px;">My tool belt</h2>
                     </div>
                     <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                         <div class="col mb-5 mb-5 mb-xl-0 hideme">
@@ -230,7 +230,7 @@
                 <div class="container px-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
-                            <div class="text-center my-5" style="padding-top: 150px;">
+                            <div class="text-center my-5" style="padding-top: 100px;">
                                 <h1 class="fw-bolder mb-3" style="color: white;">My Life in Pictures</h1>
                                 <p class="lead fw-normal mb-4" style="color: white;">Below is a wall I put together. The little boy is my young nephew and the girl is my older sister. <br><br>I wanted to show my life, hobbies, and likes through photography, hope you enjoy.</p>
 
@@ -267,9 +267,9 @@
             <section class="py-5 hideme">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="dp.png" alt="..." style="height: 250px; width: 250px;"/></div>
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="wk2.png" alt="..." style="height: 250px; width: 250px;"/></div>
                         <div class="col-lg-6"  id="minus-pad">
-                        <img class="img-fluid rounded mb-5 mb-lg-0" src="dp.png" style="height: 250px; width: 250px;"/>
+                        <img class="img-fluid rounded mb-5 mb-lg-0" src="wk.png" style="height: 250px; width: 250px;"/>
                         </div>
                     </div>
                 </div>
@@ -293,7 +293,7 @@
                     <div class="container px-5 my-5">
                         <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
                             <div class="col-lg-6 order-first order-lg-last">
-                                <img class="img-fluid rounded mb-5 mb-lg-0" src="lg.png" alt="..." style="height: 250px; width: 250px;"/></div>
+                                <img class="img-fluid rounded mb-5 mb-lg-0" src="dp.png" alt="..." style="height: 250px; width: 250px;"/></div>
                             <div class="col-lg-6" id="minus-pad">
                                 <img class="img-fluid rounded mb-5 mb-lg-0" src="lg2.png" style="height: 250px; width: 250px;" />
                             </div>
@@ -304,12 +304,12 @@
             <section class="py-5 bg-light hideme" id="scroll-target">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center" style="padding-top: 25px; padding-bottom: 25px;">
-                        <div class="col-lg-4"><img style="height: 250px; width: 250px;" class="img-fluid rounded mb-5 mb-lg-0" src="wk.png" alt="..." /></div>
+                        <div class="col-lg-4"><img style="height: 250px; width: 250px;" class="img-fluid rounded mb-5 mb-lg-0" src="sm3.jpg" alt="..." /></div>
                         <div class="col-lg-4">
                             <img class="img-fluid rounded mb-5 mb-lg-0" src="filler3.jpg" style="height: 250px; width: 250px;" />
                         </div>
                         <div class="col-lg-4">
-                            <img class="img-fluid rounded mb-5 mb-lg-0" src="wk2.png" style="height: 250px; width: 250px;" />
+                            <img class="img-fluid rounded mb-5 mb-lg-0" src="sm4.jpg" style="height: 250px; width: 250px;" />
                         </div>
                     </div>
                 </div>
