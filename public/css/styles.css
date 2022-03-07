@@ -11426,6 +11426,9 @@ My Styles
       #minus-pad {
         padding-left: 25px;
       }
+      .carousel-item {
+        padding-right: 50px;
+      }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -11452,7 +11455,9 @@ My Styles
        
     
       }
-
+      .carousel-item {
+        padding-right: 50px;
+      }
       #minus-pad {
         padding-left: 25px;
       }
