@@ -11426,9 +11426,7 @@ My Styles
       #minus-pad {
         padding-left: 25px;
       }
-      .carousel-item {
-        padding-right: 50px;
-      }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -11455,9 +11453,7 @@ My Styles
        
     
       }
-      .carousel-item {
-        padding-right: 50px;
-      }
+    
       #minus-pad {
         padding-left: 25px;
       }
@@ -11491,7 +11487,9 @@ margin-right: 275px;
     width: 500px;
     padding-right: 200px;
   }
-
+  .carousel-item {
+    padding-left: 50px;
+  }
   #minus-pad {
     padding-left: 250px;
   }
