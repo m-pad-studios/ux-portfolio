@@ -11422,7 +11422,9 @@ My Styles
        
     
       }
-
+      .carousel-item {
+        right: 25px;
+      }
       #minus-pad {
         padding-left: 25px;
       }
@@ -11453,7 +11455,9 @@ My Styles
        
     
       }
-    
+      .carousel-item {
+        right: 25px;
+      }
       #minus-pad {
         padding-left: 25px;
       }
