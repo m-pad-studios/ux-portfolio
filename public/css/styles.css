@@ -11398,7 +11398,7 @@ My Styles
   padding-top: 60px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
   #carouselExampleControls {
     padding-right: 0px;
