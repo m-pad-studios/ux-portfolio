@@ -11399,7 +11399,7 @@ My Styles
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   #carouselExampleControls {
     padding-right: 0px;
   }
@@ -11423,13 +11423,18 @@ My Styles
     
       }
       .carousel-item {
-        right: 5px;
+        right: 20px;
       }
       #minus-pad {
         padding-left: 25px;
       }
 
+      #logger-wire {
+        right: 35px;
+      }
+
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -11460,6 +11465,11 @@ My Styles
       }
       #minus-pad {
         padding-left: 25px;
+      }
+
+      
+      #logger-wire {
+        right: 25px;
       }
 }
 
