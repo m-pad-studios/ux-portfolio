@@ -11442,7 +11442,17 @@ My Styles
       #logger-wire {
         right: 35px;
       }
-
+      #blondy-background {
+    
+        height: 500px; 
+        background-image: url('../img/g-1.svg'); 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position-y: -17px;
+    
+      }
 }
 
 
@@ -11480,6 +11490,17 @@ My Styles
       
       #logger-wire {
         right: 25px;
+      }
+      #blondy-background {
+    
+        height: 500px; 
+        background-image: url('../img/g-1.svg'); 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position-y: -175px;
+        background-position-x: 100px;
       }
 }
 
@@ -11523,6 +11544,17 @@ margin-right: 275px;
   #logger-mock {
   right: 125px;
   }
+  #blondy-background {
+    
+    height: 500px; 
+    background-image: url('../img/g-1.svg'); 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position-y: -175px;
+    background-position-x: 100px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -11553,5 +11585,16 @@ right: 20px;
   #logger-mock {
     right: 0px;
 
+  }
+
+  #blondy-background {
+    height: 500px; 
+    background-image: url('../img/g-1.svg'); 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position-y: -175px;
+    background-position-x: 100px;
   }
 }
