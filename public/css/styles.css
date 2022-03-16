@@ -120,6 +120,7 @@ h1, .h1 {
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
+
   }
 }
 
@@ -11340,7 +11341,8 @@ hr.style-eight:after {
 /*
 My Styles
 
-*/
+*/  
+
 #minus-pad {
   padding-left: 200px;
 }
@@ -11514,5 +11516,42 @@ margin-right: 275px;
   }
   #minus-pad {
     padding-left: 250px;
+  }
+  #logger-wire {
+    right:150px;
+  }
+  #logger-mock {
+  right: 125px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1450px) {  
+  
+  #proto{
+margin-right: 275px;
+  }
+  #carousel-in {
+    padding-left: 500px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+  }
+  #frame {
+    height: 500px;
+    width: 500px;
+    padding-right: 200px;
+  }
+  .carousel-item {
+    padding-left: 50px;
+  }
+  #minus-pad {
+    padding-left: 250px;
+  }
+  #logger-wire {
+right: 0px;
+  }
+  #logger-mock {
+    right: 0px;
+
   }
 }
