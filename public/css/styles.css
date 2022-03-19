@@ -11944,7 +11944,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, sandybrown, chocolate);
+  background-image:linear-gradient(to right, #2c3e50, #4ca1af);
   height: 50px;
   position: relative;
   margin-bottom: 20px;
