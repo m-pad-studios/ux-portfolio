@@ -11596,3 +11596,149 @@ right: 20px;
     background-position-x: 100px;
   }
 }
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+header {
+  background: #111;
+}
+
+.headline {
+  position: relative;
+  height: 500px;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+  background-size: cover;
+}
+.headline:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+          animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.inner p {
+  margin: 0;
+  font-size: 1.4em;
+  font-style: italic;
+  font-family: serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav.scrolled {
+  background: rgba(17, 17, 17, 0.9);
+}
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+nav a:hover {
+  color: #ededed;
+}
+
+.logo {
+  height: 75px;
+  float: left;
+}
+.logo:before, .logo:after {
+  position: absolute;
+  font-size: 7em;
+  font-weight: 300;
+  line-height: 0;
+  color: #fff;
+  top: 25px;
+}
+.logo:before {
+  content: "»";
+  left: 20px;
+}
+.logo:after {
+  content: "«";
+  left: 34px;
+}
+
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.twelve h1 {
+  font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase;  text-align:center; white-space:nowrap; padding-bottom:13px;
+}
+.twelve h1:before {
+    background-color: #c50000;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 5px;
+}
+.twelve h1:after {
+    background-color: #c50000;
+    content: '';
+    display: block;
+  position:absolute; right:0; bottom:0;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 0.25em;
+}
+

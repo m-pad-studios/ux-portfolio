@@ -8,35 +8,7 @@
     <meta name="author" content="" />
     <title>Modern Business - Start Bootstrap Template</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function () {  // $(document).ready shorthand
-            $('.skills').fadeIn('slow');
-        });
-
-        $(document).ready(function () {
-
-            /* Every time the window is scrolled ... */
-            $(window).scroll(function () {
-
-                /* Check the location of each desired element */
-                $('.hideme').each(function (i) {
-
-                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object) {
-
-                        $(this).animate({ 'opacity': '1' }, 1500);
-
-                    }
-
-                });
-
-            });
-
-        });
-    </script>
+    
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -47,9 +19,19 @@
 </head>
 
 <body class="d-flex flex-column">
+    
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav>
+            <div class="logo"></div>
+            <ul>
+              <li><a href="/">Michael Parker</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#" class=" active" id="mike">Resume</a></li>
+            </ul>
+          </nav>
+<!--         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="/" class="navbar-brand">Michael Parker</a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -69,14 +51,12 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
         <!-- Header-->
-        <header class="py-5 bg-dark">
-            <div class="container px-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xxl-6">
-                        <div class="text-center my-5">
-                            <h1 class="fw-bolder mb-3" style="color: white;">Hey there, </h1>
+        <header>
+            <div class="headline">
+              <div class="inner">
+             <h1 class="fw-bolder mb-3" style="color: white;">Hey there, </h1>
 
                             <p class="lead fw-normal mb-4" style="color: white;">I'm Mike, a passionate UX designer, and
                                 coder. <br><br> My experiences in coding have been in freelance and academics. My UX
@@ -88,11 +68,10 @@
                                 <img src="img/me.jpg" style="  border-radius: 25%; height: 150px;" id="me-about" />
 
                             </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </header>
+          </header>
+    
         <!-- Team members section-->
         <section class="py-5 bg-light" style="padding-top: 50px;">
             <div class="container px-5 my-5">
@@ -445,7 +424,61 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/resume.js"></script>
+<script >
 
+
+var $headline = $('.headline'),
+    $inner = $('.inner'),
+    $nav = $('nav'),
+    navHeight = 75;
+
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop(),
+      headlineHeight = $headline.outerHeight() - navHeight,
+      navOffset = $nav.offset().top;
+
+  $headline.css({
+    'opacity': (1 - scrollTop / headlineHeight)
+  });
+  $inner.children().css({
+    'transform': 'translateY('+ scrollTop * 0.4 +'px)'
+  });
+  if (navOffset > headlineHeight) {
+    $nav.addClass('scrolled');
+  } else {
+    $nav.removeClass('scrolled');
+  }
+});
+
+
+        $(function () {  // $(document).ready shorthand
+            $('.skills').fadeIn('slow');
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.hideme').each(function (i) {
+
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1500);
+
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Michael Parker's Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -22,49 +24,44 @@
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <!-- sticky icky -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="/" class="navbar-brand">Michael Parker</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    style="float: right;">
-                    <span class="navbar-toggler-icon" style="float: right;"></span>
-                </button>
-                <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html" style="float: right;">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html" style="float: right;">Contact</a>
-                        </li>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+              <li><a href="/">Michael Parker</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#" class=" active" id="mike">Resume</a></li>
+            </ul>
+          </nav>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-
-        <!-- Page Content-->
-        <section class="py-5">
-            <div class="">
-                <div class="jumbotron">
-                    <h1 class="display-4"
-                        style="padding-top: 150px; padding-bottom: 150px; background-color: #7bb2c0; color:#4A6C7C; text-align: center; font-family: Oswald;">
+          <header >
+            <div class="headline" style="height: 1000px; background-image: linear-gradient(to right, #7bb2c0, #7bb2c0);">
+              <div class="inner">
+        
+              
+             
+                    <h1 
+                        style="padding-top: 150px; padding-bottom: 350px;  color:#ffffff; text-align: center; font-family: Oswald;">
                         The Omni Logger App
-
-                        <img class="img-fluid rounded-3 mb-5 float-right" src="img/my-logo.jpeg"
-                            style="width: 275px; height: 275px;" alt="..." />
-                        <p style="font-size: 25px; font-family: Oswald;">
+<br><br>
+                        <img class="img-fluid mb-5 float-right" src="img/my-logo.jpeg"
+                            style="width: 275px; height: 275px; border-radius: 50%;" alt="..." />
+                        <p style="font-size: 25px; font-family: Oswald; color: white;">
                         A community based E-Journal web app that tracks all users activity and presents it in graphs that is designed for mobile and desktop. 
-                       <br><br> Check it out live now hosted through Heroku: <a href="http://omnilogger.herokuapp.com" target="_blank">The Omni Logger</a>
+                        Check it out live now hosted through Heroku: <a href="http://omnilogger.herokuapp.com" target="_blank">The Omni Logger</a>
                         </p>
 
                     </h1>
-                </div>
+             
+              </div>
+            </div>
+         
+          </header>
+    
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="">
+             
                 <div class="row gx-5 justify-content-center" style="padding-top: 50px;">
                     <div class="col-lg-6">
                         <div class="text-center mb-5 float-left">
@@ -508,7 +505,61 @@ With the Omni Logger app, I created over 50 sketches. Most of the sketches were 
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/resume.js"></script>
+    <script >
 
+
+        var $headline = $('.headline'),
+            $inner = $('.inner'),
+            $nav = $('nav'),
+            navHeight = 75;
+        
+        $(window).scroll(function() {
+          var scrollTop = $(this).scrollTop(),
+              headlineHeight = $headline.outerHeight() - navHeight,
+              navOffset = $nav.offset().top;
+        
+          $headline.css({
+            'opacity': (1 - scrollTop / headlineHeight)
+          });
+          $inner.children().css({
+            'transform': 'translateY('+ scrollTop * 0.4 +'px)'
+          });
+          if (navOffset > headlineHeight) {
+            $nav.addClass('scrolled');
+          } else {
+            $nav.removeClass('scrolled');
+          }
+        });
+        
+        
+                $(function () {  // $(document).ready shorthand
+                    $('.skills').fadeIn('slow');
+                });
+        
+                $(document).ready(function () {
+        
+                    /* Every time the window is scrolled ... */
+                    $(window).scroll(function () {
+        
+                        /* Check the location of each desired element */
+                        $('.hideme').each(function (i) {
+        
+                            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+                            /* If the object is completely visible in the window, fade it it */
+                            if (bottom_of_window > bottom_of_object) {
+        
+                                $(this).animate({ 'opacity': '1' }, 1500);
+        
+                            }
+        
+                        });
+        
+                    });
+        
+                });
+            </script>
 </body>
 
 </html>
