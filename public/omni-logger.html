@@ -24,15 +24,27 @@
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <!-- sticky icky -->
-        <nav>
-            <div class="logo"></div>
-            <ul>
-              <li><a href="/">Michael Parker</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#" class=" active" id="mike">Resume</a></li>
-            </ul>
-          </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <a href="/" class="navbar-brand">Michael Parker</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                style="float: right;">
+                <span class="navbar-toggler-icon" style="float: right;"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="float: right;">About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>
 
           <header >
             <div class="headline" style="height: 1000px; background-image: linear-gradient(to right, #7bb2c0, #7bb2c0);">
@@ -60,7 +72,7 @@
     
         <!-- Page Content-->
         <section class="py-5">
-            <div class="">
+            <div class="container px-5 my-5">
              
                 <div class="row gx-5 justify-content-center" style="padding-top: 50px;">
                     <div class="col-lg-6">

@@ -29,21 +29,34 @@
     <main class="flex-shrink-0">
         <!-- Navigation-->
 
-        <nav>
-            <div class="logo"></div>
-            <ul>
-              <li><a href="/">Michael Parker</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#" class=" active" id="mike">Resume</a></li>
-            </ul>
-          </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+                <a href="/" class="navbar-brand">Michael Parker</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    style="float: right;">
+                    <span class="navbar-toggler-icon" style="float: right;"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="float: right;">About</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </nav>
         <!-- Header-->
-        <header>
+        <header>   
+            
             <div class="headline">
               <div class="inner">
         
-              
+         
 
                     <h1 class=" fw-bolder text-white text-center">Welcome, I'm Mike!</h1>
                 
@@ -58,7 +71,7 @@
                         , and advent reader of scifi & fantasy <lord-icon
                             src="https://cdn.lordicon.com/dxoycpzg.json" trigger="loop" delay="1000"
                             style="width:75px;height:75px">
-                        </lord-icon>. <br><br> <br> My true passions are in coding and UX design. I have 2 years of
+                        </lord-icon>. <br><br> My true passions are in coding and UX design. I have 2 years of
                         coding experience and
                         1 year of UX design. My specializations are in UX design for mobile and web development for mobile.
                         <br /><br />
@@ -66,7 +79,10 @@
                     </p>
 
               </div>
-            </div>
+
+                
+              </div>
+      
          
           </header>
     
