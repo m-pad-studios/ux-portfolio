@@ -11540,7 +11540,10 @@ a {
   background-size: cover;
 }
 
-
+#index-headline {
+  left: 0%;
+  top: 0%;
+}
 }
 
 
