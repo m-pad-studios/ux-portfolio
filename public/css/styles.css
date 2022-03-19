@@ -11906,3 +11906,83 @@ h2 {
   align-items: center;
   justify-content: space-around;
 }
+
+/* 
+.wrapper {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  overflow: hidden;
+}
+
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+ */
+
+
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, sandybrown, chocolate);
+  height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.wave::before, .wave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+}
+.wave::before {
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after {
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+.wave--top {
+  background: linear-gradient(to top, sandybrown, chocolate);
+}
+.wave--top::before, .wave--top::after {
+  bottom: auto;
+  top: 0;
+}
+.wave--top::before {
+  background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px);
+}
+.wave--top::after {
+  background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
+}
+
+.content {
+  color: #333;
+  font-size: 0.8em;
+  padding: 1em;
+}
