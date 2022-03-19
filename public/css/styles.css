@@ -11456,6 +11456,14 @@ My Styles
   height: 100%;
   background: rgba(17, 17, 17, 0.5);
 }
+
+a {
+  color: white;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
   #carouselExampleControls {
