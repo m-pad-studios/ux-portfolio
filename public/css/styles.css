@@ -11837,6 +11837,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
+  right:20px;
 }
 .card0 {
   background: url("../img/blondy-logo.png") center center no-repeat;
