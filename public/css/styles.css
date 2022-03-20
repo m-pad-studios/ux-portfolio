@@ -11971,9 +11971,7 @@ h2 {
   background-size: 40px 20px;
   background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
-.wave--top {
-  background: linear-gradient(to top, sandybrown, chocolate);
-}
+
 .wave--top::before, .wave--top::after {
   bottom: auto;
   top: 0;
@@ -11989,4 +11987,26 @@ h2 {
   color: #333;
   font-size: 0.8em;
   padding: 1em;
+}
+
+
+
+.box-1 {
+  --mask: linear-gradient(#000 0 0) center/calc(100% - 60px) calc(100% - 60px)
+      no-repeat,
+    conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) 0 0/60px
+      30px space no-repeat,
+    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 0
+      100%/60px 30px space no-repeat,
+    conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 0 0/30px
+      60px no-repeat space,
+    conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg)
+      100% 0/30px 60px no-repeat space;
+
+  display: inline-block;
+  width: 320px;
+  aspect-ratio: 1;
+
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
