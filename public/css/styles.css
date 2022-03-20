@@ -11408,11 +11408,6 @@ My Styles
 
 .inner {
   position: absolute;
- /*  top: 50%;
-  left: 50%;
-  opacity: 0;
-  z-index: 10;
-  transform: translateX(-50%) translateY(-50%); */
   -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
           animation: fade-in 0.75s 0.25s ease-in forwards;
 }
@@ -11434,7 +11429,7 @@ My Styles
   height: 600px;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+  background-image: linear-gradient(to right, #165e6a, #165e6a);
   background-size: cover;
 }
 
@@ -11454,7 +11449,6 @@ My Styles
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(17, 17, 17, 0.5);
 }
 
 a {
@@ -11464,8 +11458,77 @@ a {
   text-transform: uppercase;
 }
 
+/* WAVE START */
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #165e6a, #ffff);
+  height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+ 
+}
+.wave::before, .wave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+ 
+}
+.wave::before {
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after {
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.wave--top::before, .wave--top::after {
+  bottom: auto;
+  top: 0;
+}
+.wave--top::before {
+  background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px);
+}
+.wave--top::after {
+  background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
+}
+
+.content {
+  color: #333;
+  font-size: 0.8em;
+  padding: 1em;
+}
+/* WAVE END */
+
+/* SKILLS START*/
+#skill-set {
+  height: 1300px;
+}
+/* SKILLS END */
+
+/* TOOLS START */
+#tool-belt {
+  height: 1000px;
+}
+/* TOOLS END */
+
+
+
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
+  #skill-set {
+    height: 4300px;
+  }
+#tool-belt {
+  height: 1000px;
+}
   #carouselExampleControls {
     padding-right: 0px;
   }
@@ -11942,52 +12005,6 @@ h2 {
   from { transform: rotate(360deg);}
 }
  */
-
-
-.wave {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image:linear-gradient(to right, #2c3e50, #4ca1af);
-  height: 50px;
-  position: relative;
-  margin-bottom: 20px;
-}
-.wave::before, .wave::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat-x;
-}
-.wave::before {
-  height: 10px;
-  background-size: 20px 20px;
-  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
-}
-.wave::after {
-  height: 15px;
-  background-size: 40px 20px;
-  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-}
-
-.wave--top::before, .wave--top::after {
-  bottom: auto;
-  top: 0;
-}
-.wave--top::before {
-  background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px);
-}
-.wave--top::after {
-  background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
-}
-
-.content {
-  color: #333;
-  font-size: 0.8em;
-  padding: 1em;
-}
 
 
 
