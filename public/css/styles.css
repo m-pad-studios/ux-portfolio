@@ -11429,7 +11429,7 @@ My Styles
   height: 625px;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to right,  #39993A,  #39993A);
+  background-image: linear-gradient(to right,  #39993A,  #ffff);
   background-size: cover;
 }
 
@@ -11602,7 +11602,7 @@ a {
   height: 600px;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to right, #39993A, #4ca1af);
+  background-image: linear-gradient(to right, #39993A, #ffff);
   background-size: cover;
 }
 
