@@ -48,7 +48,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 57, 153, 58;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -11426,10 +11426,10 @@ My Styles
 
 .headline {
   position: relative;
-  height: 600px;
+  height: 625px;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to right, #165e6a, #165e6a);
+  background-image: linear-gradient(to right,  #39993A,  #39993A);
   background-size: cover;
 }
 
@@ -11509,13 +11509,13 @@ a {
 
 /* SKILLS START*/
 #skill-set {
-  height: 1300px;
+  height: 900px;
 }
 /* SKILLS END */
 
 /* TOOLS START */
 #tool-belt {
-  height: 1000px;
+  height: 300px;
 }
 /* TOOLS END */
 
