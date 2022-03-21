@@ -11519,7 +11519,9 @@ a {
 }
 /* TOOLS END */
 
-
+#carousel-in {
+  padding-right: 284px;
+}
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
@@ -11534,6 +11536,7 @@ a {
   }
   #carouselExampleControls2 {
     padding-right: 0px;
+    padding-left:  75px;
   }
   #landing-page {
     padding-left: 30px;
@@ -11719,7 +11722,7 @@ margin-right: 275px;
     right:150px;
   }
   #logger-mock {
-  right: 125px;
+  right: 150px;
   }
   #blondy-background {
     
