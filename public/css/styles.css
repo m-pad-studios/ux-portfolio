@@ -11463,7 +11463,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #39993A, #ffff);
+  background-image: linear-gradient(to bottom, #39993A, #ffff);
   height: 50px;
   position: relative;
   margin-bottom: 20px;
@@ -11528,7 +11528,7 @@ a {
 
 
   #skill-set {
-    height: 4300px;
+    height: 2800px;
   }
 #tool-belt {
   height: 1000px;
