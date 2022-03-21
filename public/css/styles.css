@@ -12057,9 +12057,10 @@ h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -75px 0 0 -75px;
+  margin: -100px 0 0 -75px;
   border-radius: 50%;
-  background: #424242;
+  background-image: linear-gradient(to bottom, #7bb2c0, #ffff);
+
   background-size: 100%;
   overflow: hidden;
   text-decoration: none;
@@ -12122,6 +12123,17 @@ box-shadow: 0 5px 10px black;
 
 #menu:target>.menu-item:nth-child(4) {
   transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+  transition-delay: 0.3s;
+}
+
+
+#menu:target>.menu-item:nth-child(7) {
+  transform: rotate(-100deg) translateY(-155px) rotate(100deg);
+  transition-delay: 0.3s;
+}
+
+#menu:target>.menu-item:nth-child(8) {
+  transform: rotate(-140deg) translateY(-155px) rotate(140deg);
   transition-delay: 0.3s;
 }
 
