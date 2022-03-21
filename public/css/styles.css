@@ -11528,7 +11528,7 @@ a {
 
 
   #skill-set {
-    height: 2800px;
+    height: 1100px;
   }
 #tool-belt {
   height: 1000px;
@@ -12040,7 +12040,7 @@ h2 {
   height: 150px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 72%;
   margin: -75px 0 0 -75px;
   list-style: none;
   font-size: 200%;
@@ -12107,33 +12107,33 @@ box-shadow: 0 5px 10px black;
 }
 
 #menu:target>.menu-item:nth-child(6) {
-  transform: rotate(60deg) translateY(-150px) rotate(300deg);
+  transform: rotate(60deg) translateY(-114px) rotate(300deg);
   transition-delay: 0s;
 }
 
 #menu:target>.menu-item:nth-child(5) {
-  transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+  transform: rotate(20deg) translateY(-103px) rotate(-20deg);
   transition-delay: 0.1s;
 }
 
 #menu:target>.menu-item:nth-child(3) {
-  transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+  transform: rotate(-25deg) translateY(-99px) rotate(20deg);
   transition-delay: 0.2s;
 }
 
 #menu:target>.menu-item:nth-child(4) {
-  transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+  transform: rotate(-69deg) translateY(-104px) rotate(60deg);
   transition-delay: 0.3s;
 }
 
 
 #menu:target>.menu-item:nth-child(7) {
-  transform: rotate(-100deg) translateY(-155px) rotate(100deg);
+  transform: rotate(-111deg) translateY(-114px) rotate(100deg);
   transition-delay: 0.3s;
 }
 
 #menu:target>.menu-item:nth-child(8) {
-  transform: rotate(-140deg) translateY(-155px) rotate(140deg);
+  transform: rotate(-151deg) translateY(-127px) rotate(140deg);
   transition-delay: 0.3s;
 }
 
