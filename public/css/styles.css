@@ -11526,6 +11526,18 @@ a {
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
 
+  #pad {
+    width: 95%;
+    padding-right: 50px;
+    padding-left: 25px;
+    margin-top: 900px;
+  }
+
+#tear-drop {
+  width: 75%; 
+  position: absolute; 
+  padding-bottom: 731px;
+}
 
   #skill-set {
     height: 1100px;
