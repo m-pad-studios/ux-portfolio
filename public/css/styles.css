@@ -11525,6 +11525,8 @@ a {
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
+
+
   #skill-set {
     height: 4300px;
   }
@@ -11599,7 +11601,7 @@ a {
 
 .headline {
   position: relative;
-  height: 600px;
+  height: 809px;
   color: #fff;
   text-align: center;
   background-image: linear-gradient(to right, #39993A, #ffff);
