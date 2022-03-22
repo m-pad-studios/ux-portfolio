@@ -25,30 +25,14 @@
     <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column h-100" style="background-image: url('../img/bubbs2.jpg'); background-position-y: 232px;">
+<body class="d-flex flex-column h-100" >
     <main class="flex-shrink-0">
         <!-- Navigation-->
-
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
-                <a href="/" class="navbar-brand">Michael Parker</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    style="float: right;">
-                    <span class="navbar-toggler-icon" style="float: right;"></span>
-                </button>
-                <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html" style="float: right;">About</a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            
+        <nav id ="navigation">
+            <a href="/">Home</a>
+            <a href="about.html">About</a>
+            <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
+        
         </nav>
         <!-- Header-->
         <header >   
@@ -56,29 +40,17 @@
             <div class="headline">
               <div class="inner" id="index-headline">
         
-         
-
-                    <h1 class=" fw-bolder text-white text-center" style="padding-top: 10px;">Welcome, I'm Mike!</h1>
-                
-                    <p class="lead fw-normal text-white mb-4"> I am a coder <lord-icon
-                            src="https://cdn.lordicon.com/txmlvqat.json" trigger="loop" delay="800"
-                            style="width:75px;height:75px">
-                        </lord-icon>, UX designer <lord-icon src="https://cdn.lordicon.com/kgyyczfx.json"
-                            trigger="loop" delay="1700" style="width:75px;height:75px">
-                        </lord-icon>, swimmer <lord-icon src="https://cdn.lordicon.com/wysnvpbj.json"
-                            trigger="loop" delay="1500" style="width:75px;height:75px">
-                        </lord-icon>
-                        , and advent reader of scifi & fantasy <lord-icon
-                            src="https://cdn.lordicon.com/dxoycpzg.json" trigger="loop" delay="1000"
-                            style="width:75px;height:75px">
-                        </lord-icon>. <br><br> My true passions are in coding and UX design. I have 2 years of
-                        coding experience and
-                        1 year of UX design.
-                        <br /><br />
-                        Below are some of my most recent projects, please take a look around.
-                    
-                    </p>
-
+    
+   <section id="jumbotron">
+            <div id = "shade">
+                <h1 id = "jumbotron-title"> "Welcome, "</h1>
+                <h3> - Mike Parker</h3>
+                <div id ="read-more-container">
+                    <h4 id = "read-more">Projects Below</h4>
+                    <i id ="arrow-down" class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
               </div>
 
                 
@@ -86,6 +58,8 @@
       
          
           </header>
+
+       
     
 
         <!-- Blog preview section-->
@@ -155,7 +129,7 @@
         
     </main>
     <!-- Footer-->
-    <footer class=" py-4 mt-auto" style="  background-image: linear-gradient(to top, #39993A, #ffff);
+    <footer class=" py-4 mt-auto" style="  background-image: linear-gradient(to top, #000000, #ffff);
     ">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
@@ -243,6 +217,44 @@
                 });
     
             });
+
+            function paddingTop(a,b){
+	  var sectionHeight = a.height();
+	  var contentHeight = b.height();
+	  var equation = (sectionHeight/2 ) - (contentHeight/2);
+	   b.css('padding-top', equation);
+	}
+	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	 paddingTop($('#about-container'), $('#about-testimonial'));
+
+
+	$(window).on('resize', function(){
+	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	 paddingTop($('#about-container'), $('#about-testimonial'));
+	});
+
+//Below is for fixed Nav activation
+function activateFixedNav(){
+		if($("#navigation").offset().top > 100){
+			console.log('IT works');
+			$("#navigation").addClass("active-nav");
+
+		}else{
+			$("#navigation").removeClass("active-nav");
+		}
+
+	}
+		
+activateFixedNav();
+
+	
+$(window).on('scroll', function(){
+		
+		activateFixedNav();
+	
+	});
+
+console.log($("#about-container").offset().top);
         </script>
 </body>
 

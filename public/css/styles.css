@@ -111,7 +111,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 500;
   line-height: 1.2;
   font-family: Oswald;
-  color: #4A6C7C;
+  color: #ffffff;
 }
 
 h1, .h1 {
@@ -11429,7 +11429,6 @@ My Styles
   height: 625px;
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(to bottom,  #39993A,  #ffff);
   background-size: cover;
 }
 
@@ -11438,8 +11437,7 @@ My Styles
 }
 
 #index-headline {
-  left: 20%;
-  top: 10%;
+width: 100%;
 }
 
 .headline:after {
@@ -11745,6 +11743,72 @@ box-shadow: 0 5px 10px black;
 }
 
 /* TOOL BOX MENU END */
+
+#jumbotron{
+	background-image: url("https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-0.3.5&s=8f756ca31e306b6d25a887c1e5ee1011&auto=format&fit=crop&w=1050&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	color: white;
+}
+#jumbotron #shade{
+	text-align: center;
+	height: 100vh;
+	background:rgba(0,0,0,0.4);
+}
+#jumbotron div h1{
+	font-size: 48px;
+	letter-spacing: 1px;
+}
+#jumbotron div h3{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#read-more-container{
+	width: 100px;
+	margin:auto;
+}
+#read-more-container:hover{
+	cursor: pointer;
+	padding-top: 5px;
+	transition: ease-in 0.4s;
+}
+
+#navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	position: fixed;
+	height: 150px;
+	font-size: 28px;
+}
+.active-nav{
+	color: black;
+}
+.active-nav a:link{
+	color: black;
+
+}
+#navigation a:link{
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+}
+#navigation a:hover .active-nav a:hover{
+	color: white;
+	text-decoration: underline;
+	transition: ease-in 0.3s;
+}
+#navigation a:visited, .active-nav a:visited{
+	color: white;
+	text-decoration: none;
+}
+#navigation a:active,  .active-nav a:active{
+	color: white;
+	text-decoration: none;
+}
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
