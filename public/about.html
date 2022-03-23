@@ -22,46 +22,36 @@
     
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
-            <a href="/" class="navbar-brand">Michael Parker</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                style="float: right;">
-                <span class="navbar-toggler-icon" style="float: right;"></span>
-            </button>
-            <div id="navbarCollapse" class="collapse navbar-collapse" style="float: right;">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="float: right;">About</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
-                    </li>
-                </ul>
-            </div>
+        <nav id ="navigation">
+            <a href="/">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
         
-    </nav>
+        </nav>
 
         <!-- Header-->
-        <header style="height: 1080px;">
+        <header >   
+            
             <div class="headline">
-              <div class="inner">
-             <h1 class="fw-bolder mb-3" style="color: white; padding-top: 10px;">Hey there, </h1>
-
-                            <p class="lead fw-normal mb-4" style="color: white;">I'm Mike, a passionate UX designer, and
-                                coder. <br><br> My experiences in coding have been in freelance and academics. My UX
-                                design experience has been through a Google certification, Foundations of User
-                                Experience Design, and freelance. <br><br> Combined I have several years of coding and
-                                UX design experience. I have a goal to become a UX designer for a large company and be
-                                able to grow personally and professionally.</p>
-                      
-                   
-      
+              <div class="inner" id="index-headline">
+        
+    
+   <section id="jumbotron" style="background-image: url('../img/jumbo.jpg');">
+            <div id = "shade">
+                <h1 id = "jumbotron-title"> ""</h1>
+                <h3> - Mike Parker</h3>
+                <div id ="read-more-container">
+                    <h4 id = "read-more">Projects Below</h4>
+                    <i id ="arrow-down" class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
               </div>
-            </div>   
 
+                
+              </div>
+      
+         
           </header>
 
                  
@@ -182,57 +172,94 @@
 
 
 var $headline = $('.headline'),
-    $inner = $('.inner'),
-    $nav = $('nav'),
-    navHeight = 75;
-
-$(window).scroll(function() {
-  var scrollTop = $(this).scrollTop(),
-      headlineHeight = $headline.outerHeight() - navHeight,
-      navOffset = $nav.offset().top;
-
-  $headline.css({
-    'opacity': (1 - scrollTop / headlineHeight)
-  });
-  $inner.children().css({
-    'transform': 'translateY('+ scrollTop * 0.4 +'px)'
-  });
-  if (navOffset > headlineHeight) {
-    $nav.addClass('scrolled');
-  } else {
-    $nav.removeClass('scrolled');
-  }
-});
-
-
-        $(function () {  // $(document).ready shorthand
-            $('.skills').fadeIn('slow');
-        });
-
-        $(document).ready(function () {
-
-            /* Every time the window is scrolled ... */
-            $(window).scroll(function () {
-
-                /* Check the location of each desired element */
-                $('.hideme').each(function (i) {
-
-                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object) {
-
-                        $(this).animate({ 'opacity': '1' }, 1500);
-
-                    }
-
+        $inner = $('.inner'),
+        $nav = $('nav'),
+        navHeight = 75;
+    
+    $(window).scroll(function() {
+      var scrollTop = $(this).scrollTop(),
+          headlineHeight = $headline.outerHeight() - navHeight,
+          navOffset = $nav.offset().top;
+    
+      $headline.css({
+        'opacity': (1 - scrollTop / headlineHeight)
+      });
+      $inner.children().css({
+        'transform': 'translateY('+ scrollTop * 0.4 +'px)'
+      });
+      if (navOffset > headlineHeight) {
+        $nav.addClass('scrolled');
+      } else {
+        $nav.removeClass('scrolled');
+      }
+    });
+    
+    
+            $(function () {  // $(document).ready shorthand
+                $('.skills').fadeIn('slow');
+            });
+    
+            $(document).ready(function () {
+    
+                /* Every time the window is scrolled ... */
+                $(window).scroll(function () {
+    
+                    /* Check the location of each desired element */
+                    $('.hideme').each(function (i) {
+    
+                        var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+    
+                        /* If the object is completely visible in the window, fade it it */
+                        if (bottom_of_window > bottom_of_object) {
+    
+                            $(this).animate({ 'opacity': '1' }, 1500);
+    
+                        }
+    
+                    });
+    
                 });
-
+    
             });
 
-        });
+            function paddingTop(a,b){
+	  var sectionHeight = a.height();
+	  var contentHeight = b.height();
+	  var equation = (sectionHeight/2 ) - (contentHeight/2);
+	   b.css('padding-top', equation);
+	}
+	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	 paddingTop($('#about-container'), $('#about-testimonial'));
 
+
+	$(window).on('resize', function(){
+	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	 paddingTop($('#about-container'), $('#about-testimonial'));
+	});
+
+//Below is for fixed Nav activation
+function activateFixedNav(){
+		if($("#navigation").offset().top > 100){
+			console.log('IT works');
+			$("#navigation").addClass("active-nav");
+
+		}else{
+			$("#navigation").removeClass("active-nav");
+		}
+
+	}
+		
+activateFixedNav();
+
+	
+$(window).on('scroll', function(){
+		
+		activateFixedNav();
+	
+	});
+
+console.log($("#about-container").offset().top);
     </script>
 </body>
 

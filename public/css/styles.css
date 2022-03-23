@@ -11314,36 +11314,13 @@ html {
   min-height: 15rem;
 }
 
-/* Glyph, by Harry Roberts */
-
-hr.style-eight {
-  overflow: visible; /* For IE */
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: white;
-
-  text-align: center;
-}
-hr.style-eight:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 5.5em;
-  padding: 0 0.25em;
-  background: #212529;
-  color: white;
-}
 
 /*
 My Styles
 
 */  
 
-/* #minus-pad {
-  padding-left: 200px;
-} */
+
 
 .hideme {
   opacity: 0;
@@ -12287,57 +12264,5 @@ h2 {
   justify-content: space-around;
 }
 
-/* 
-.wrapper {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-  overflow: hidden;
-}
 
-.wave {
-  width: 1000px;
-  height: 1025px;
-  position: absolute;
-  top: -25%;
-  left: 50%;
-  margin-left: -500px;
-  margin-top: -500px;
-  border-radius: 35%;
-  background: rgba(255, 255, 255, .75);
-  animation: wave 15s infinite linear;
-}
-
-@keyframes wave {
-  from { transform: rotate(0deg);}
-  from { transform: rotate(360deg);}
-}
- */
-
-/* 
-
-.box-1 {
-  --mask: linear-gradient(#000 0 0) center/calc(100% - 60px) calc(100% - 60px)
-      no-repeat,
-    conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) 0 0/60px
-      30px space no-repeat,
-    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 0
-      100%/60px 30px space no-repeat,
-    conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 0 0/30px
-      60px no-repeat space,
-    conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg)
-      100% 0/30px 60px no-repeat space;
-
-  display: inline-block;
-  width: 320px;
-  aspect-ratio: 1;
-
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-} */
 
