@@ -18,7 +18,7 @@
     <link href="/css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column" >
+<body class="d-flex flex-column scrollable">
     
     <main class="flex-shrink-0">
         <!-- Navigation-->
@@ -38,10 +38,10 @@
     
    <section id="jumbotron" style="background-image: url('../img/jumbo.jpg'); background-position-x: -300px;">
             <div id = "shade">
-                <h1 id = "jumbotron-title"> ""</h1>
+                <h3 id = "jumbotron-title"> "Hey there, glad you could make it. My About me is an interactive animated experience. Click your way through to get to know me. See you at the end."</h1>
                 <h3> - Mike Parker</h3>
                 <div id ="read-more-container">
-                    <h4 id = "read-more">Projects Below</h4>
+                    <h4 id = "read-more"><a href="#skill-set">Click me!</a></h4>
                     <i id ="arrow-down" class="fas fa-arrow-down"></i>
                 </div>
             </div>
@@ -54,8 +54,7 @@
          
           </header>
 
-                 
-
+   
           
         <!-- Team members section-->
         <section class="wave" id="skill-set" style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
@@ -63,8 +62,9 @@
 <img src="../img/skills-orb.jpg" style="" id="tear-drop"/>
            <div class="container">
                 <ul id="menu">
-                           <a class="menu-button icon-plus" href="#menu" title="Show navigation"></a>
-                           <a class="menu-button icon-minus" href="#0!" title="Hide navigation" ></a>
+                           <a class="menu-button icon-plus" href="#menu" title="Show navigation" onclick="disableScroll()"></a>
+                           <a class="menu-button icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
+
                            <li class="menu-item" style="background-image: url(img/code.svg); background-repeat: no-repeat; background-size: cover;">
                             
                            </li>
@@ -86,7 +86,7 @@
                               
                                
                         </li>
-                        <li class="menu-item" style="background-image: url(img/data2.svg); background-repeat: no-repeat; background-size: cover;">
+                        <li class="menu-item" style="background-image: url(img/js.svg); background-repeat: no-repeat; background-size: cover;">
                               
                                
                         </li>
@@ -109,22 +109,42 @@
                         <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
                               
                                
-                        </li>
+                        </li>                           
+                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
+                              
+                               
+                        </li>    
+                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
+                              
+                               
+                        </li>    
+                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
+                              
+                               
+                        </li>    
+                        <p style="visibility: hidden; font-size: 12px;
+                        color: black;
+                        z-index: 1;
+                        position: fixed;
+                        margin-right: 42px;" id="instructions-skill-orb">Click orb again to scroll further down!</p>
+
                        </ul>
                  
-        
            </div>
-                   
-           <img src="../img/pad.jpg" id="pad"/>
+        
 
+           <img src="../img/pad.jpg" id="pad"/>
+   
+      
         </section>
 
         <!-- Team members section-->
         <section class="wave" id="skill-set" style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
-                       <div class="container">
+           
+            <div class="container">
                             <ul id="menu2">
-                                       <a class="menu-button2 icon-plus" href="#menu2" title="Show navigation"></a>
-                                       <a class="menu-button2 icon-minus" href="#0!" title="Hide navigation" ></a>
+                                       <a class="menu-button2 icon-plus" href="#menu2" title="Show navigation" onclick="disableScroll()"></a>
+                                       <a class="menu-button2 icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
                                        <li class="menu-item2" style="background-image: url(img/code.svg); background-repeat: no-repeat; background-size: cover;">
                                         
                                        </li>
@@ -169,8 +189,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/resume.js"></script>
 <script >
-
-
+  
 var $headline = $('.headline'),
         $inner = $('.inner'),
         $nav = $('nav'),
@@ -260,6 +279,26 @@ $(window).on('scroll', function(){
 	});
 
 console.log($("#about-container").offset().top);
+
+function disableScroll() {
+    
+    document.getElementById('instructions-skill-orb').style.visibility = "visible";
+
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+  
+function enableScroll() {
+    document.getElementById('instructions-skill-orb').style.visibility = "hidden";
+
+    window.onscroll = function() {};
+}
     </script>
 </body>
 

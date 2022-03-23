@@ -11529,7 +11529,9 @@ a {
   margin: -100px 0 0 -75px;
   border-radius: 50%;
   background-image: linear-gradient(to bottom, #7bb2c0, #ffff);
-
+  border-style: solid;
+  border-color: #000;
+  border-width: medium;
   background-size: 100%;
   overflow: hidden;
   text-decoration: none;
@@ -11606,6 +11608,24 @@ box-shadow: 0 5px 10px black;
   transition-delay: 0.5s;
 }
 
+
+#menu:target>.menu-item:nth-child(9) {
+  transform: rotate(-190deg) translateY(-127px) rotate(140deg);
+  transition-delay: 0.5s;
+}
+
+
+#menu:target>.menu-item:nth-child(10) {
+  transform: rotate(-230deg) translateY(-127px) rotate(140deg);
+  transition-delay: 0.5s;
+}
+
+
+#menu:target>.menu-item:nth-child(11) {
+  transform: rotate(-265deg) translateY(-127px) rotate(140deg);
+  transition-delay: 0.5s;
+}
+
 .content{
 position: absolute;
 text-align: center;
@@ -11643,6 +11663,9 @@ font-size: 20px;
   margin: -100px 0 0 -75px;
   border-radius: 18%;
   background-image: linear-gradient(to bottom, #7bb2c0, #ffff);
+  border-style: solid;
+  border-color: #000;
+  border-width: medium;
   background-size: 100%;
   overflow: hidden;
   text-decoration: none;
@@ -11758,7 +11781,7 @@ box-shadow: 0 5px 10px black;
 	justify-content: space-around;
 	width: 100%;
 	position: fixed;
-	height: 150px;
+	height: 75px;
 	font-size: 28px;
 }
 .active-nav{
@@ -11788,7 +11811,7 @@ box-shadow: 0 5px 10px black;
 }
 
 /* Extra small devices (phones, 400px and down) */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
   #sign{
 width: 99%;
@@ -11800,12 +11823,13 @@ width: 99%;
     padding-left: -8px;
   }
   #pad {
-    width: 95%;
+    width: 486px;
     padding-right: 50px;
     padding-left: 25px;
     margin-top: 900px;
   }
 
+  
 #tear-drop {
   width: 545px; 
   position: absolute; 
