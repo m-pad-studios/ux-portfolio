@@ -18,7 +18,7 @@
     <link href="/css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column scrollable">
+<body class="d-flex flex-column scrollable" onload="disableScroll()">
     
     <main class="flex-shrink-0">
         <!-- Navigation-->
@@ -36,12 +36,12 @@
               <div class="inner" id="index-headline">
         
     
-   <section id="jumbotron" style="background-image: url('../img/jumbo.jpg'); background-position-x: -300px;">
+   <section id="jumbotron" style="background-image: url('../img/jumbo.jpg'); background-position-x: -275px;">
             <div id = "shade">
-                <h3 id = "jumbotron-title"> "Hey there, glad you could make it. My About me is an interactive animated experience. Click your way through to get to know me. See you at the end."</h1>
-                <h3> - Mike Parker</h3>
+                <h3 id = "jumbotron-title" style="padding-top: 175px; color: white;"> "Hey there, glad you could make it. My About me is an interactive animated experience. Click your way through to get to know me. See you at the end."</h1>
+                <h3 style="color: white;"> - Mike Parker</h3>
                 <div id ="read-more-container">
-                    <h4 id = "read-more"><a href="#skill-set">Click me!</a></h4>
+                    <h4 id = "read-more"><a href="#skill-set" onclick="enableScroll()">Click me!</a></h4>
                     <i id ="arrow-down" class="fas fa-arrow-down"></i>
                 </div>
             </div>
@@ -137,7 +137,6 @@
    
       
         </section>
-
         <!-- Team members section-->
         <section class="wave" id="skill-set" style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
            
@@ -248,12 +247,12 @@ var $headline = $('.headline'),
 	  var equation = (sectionHeight/2 ) - (contentHeight/2);
 	   b.css('padding-top', equation);
 	}
-	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	 
 	 paddingTop($('#about-container'), $('#about-testimonial'));
 
 
 	$(window).on('resize', function(){
-	 paddingTop($('#jumbotron'),$('#jumbotron-title'));
+	
 	 paddingTop($('#about-container'), $('#about-testimonial'));
 	});
 
@@ -299,6 +298,7 @@ function enableScroll() {
 
     window.onscroll = function() {};
 }
+
     </script>
 </body>
 
