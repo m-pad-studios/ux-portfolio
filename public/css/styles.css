@@ -11915,7 +11915,7 @@ h2 {
 @media only screen and (max-width: 450px) {
   #carousel-in {
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 50px;
   }
   #sign{
 width: 99%;
