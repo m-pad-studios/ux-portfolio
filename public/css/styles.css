@@ -11913,7 +11913,10 @@ h2 {
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 450px) {
-
+  #carousel-in {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
   #sign{
 width: 99%;
 }
@@ -11952,7 +11955,7 @@ width: 99%;
   }
   #carouselExampleControls2 {
     padding-right: 0px;
-    padding-left:  75px;
+    padding-left:  25px;
   }
   #landing-page {
     padding-left: 30px;
