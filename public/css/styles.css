@@ -11743,13 +11743,16 @@ box-shadow: 0 5px 10px black;
 /* TOOL BOX MENU END */
 
 #jumbotron{
-	background-image: url("https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-0.3.5&s=8f756ca31e306b6d25a887c1e5ee1011&auto=format&fit=crop&w=1050&q=80");
+	background-image: url("../img/home-desktop.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
 	color: white;
 }
+
+
+
 #jumbotron #shade{
 	text-align: center;
 	height: 100vh;
@@ -11771,6 +11774,31 @@ box-shadow: 0 5px 10px black;
 	cursor: pointer;
 	padding-top: 5px;
 	transition: ease-in 0.4s;
+}
+
+#jumbotron2{
+  background-image: url("../img/me-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+
+#jumbotron2 #shade{
+	text-align: center;
+	height: 100vh;
+	background:rgba(0,0,0,0.4);
+}
+#jumbotron2 div h1{
+	font-size: 48px;
+	letter-spacing: 1px;
+}
+#jumbotron2 div h3{
+
+	margin-bottom: 15px;
 }
 
 #navigation{
@@ -11911,6 +11939,22 @@ h2 {
 
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 450px) {
+  #jumbotron{
+    background-image: url("../img/home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 120vh;
+    color: white;
+  }
+  #jumbotron2{
+    background-image: url("../img/me-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 120vh;
+    color: white;
+  }
   #carousel-in {
     padding-right: 0px;
     
@@ -12024,7 +12068,7 @@ width: 99%;
 
 #index-headline {
   left: 0%;
-  top: -2%;
+  top: 0%;
 }
 }
 
@@ -12477,7 +12521,7 @@ width: 99%;
     
     #index-headline {
       left: 0%;
-      top: -2%;
+      top: 0%;
     }
 }
 
@@ -12495,10 +12539,10 @@ width: 99%;
         padding-left: -8px;
       }
       #pad {
-        width: 486px;
-        padding-right: 50px;
+        width: 2000px;
+        padding-right: 475px;
         padding-left: 25px;
-        margin-top: 900px;
+        margin-top: 875px;
       }
     
       
@@ -12591,7 +12635,7 @@ width: 99%;
     
     #index-headline {
       left: 0%;
-      top: -2%;
+      top: 0%;
     }
 }
 
