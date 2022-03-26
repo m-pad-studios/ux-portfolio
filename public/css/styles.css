@@ -11961,38 +11961,35 @@ h2 {
   display: flex;
 }
 
-span {
-  margin: auto;
-  font-size: 2rem;
-}
+
 
 
 .carousel__face:nth-child(1) {
-  background-image: url("../img/wire-1.png");
+  background-image: url("../img/logger-wire.png");
   transform: rotateY(  0deg) translateZ(430px); }
 .carousel__face:nth-child(2) { 
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
     transform: rotateY( 40deg) translateZ(430px); }
 .carousel__face:nth-child(3) {
-  background-image: url("../img/wire-3.png");
+  background-image: url("../img/logger-wire.png");
   transform: rotateY( 80deg) translateZ(430px); }
 .carousel__face:nth-child(4) {
-  background-image: url("../img/wire-4.png");
+  background-image: url("../img/logger-wire.png");
   transform: rotateY(120deg) translateZ(430px); }
 .carousel__face:nth-child(5) { 
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
  transform: rotateY(160deg) translateZ(430px); }
 .carousel__face:nth-child(6) { 
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
  transform: rotateY(200deg) translateZ(430px); }
 .carousel__face:nth-child(7) { 
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
  transform: rotateY(240deg) translateZ(430px); }
 .carousel__face:nth-child(8) {
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
   transform: rotateY(280deg) translateZ(430px); }
 .carousel__face:nth-child(9) {
-  background-image: url("../img/wire-2.png");
+  background-image: url("../img/logger-wire.png");
   transform: rotateY(320deg) translateZ(430px); }
 
 
@@ -12009,35 +12006,45 @@ span {
 
     display: flex;
   }
-
+span {
+  margin: auto;
+  font-size: 2rem;
+}
   .carousel__face2:nth-child(1) {
-    background-image: url("../img/mock-1.png");
+    background-image: url("../img/logger-mock.png");
     transform: rotateY(  0deg) translateZ(430px); }
   .carousel__face2:nth-child(2) { 
-    background-image: url("../img/mock-2.png");
+    background-image: url("../img/logger-mock.png");
       transform: rotateY( 40deg) translateZ(430px); }
   .carousel__face2:nth-child(3) {
-    background-image: url("../img/mock-3.png");
+    background-image: url("../img/logger-mock.png");
     transform: rotateY( 80deg) translateZ(430px); }
   .carousel__face2:nth-child(4) {
-    background-image: url("../img/mock-4.png");
+    background-image: url("../img/logger-mock.png");
     transform: rotateY(120deg) translateZ(430px); }
   .carousel__face2:nth-child(5) { 
-    background-image: url("../img/mock-5.png");
+    background-image: url("../img/logger-mock.png");
    transform: rotateY(160deg) translateZ(430px); }
   .carousel__face2:nth-child(6) { 
-    background-image: url("../img/mock-6.png");
+    background-image: url("../img/logger-mock.png");
    transform: rotateY(200deg) translateZ(430px); }
-  .carousel__face2:nth-child(7) { 
-    background-image: url("../img/mock-2.png");
+   .carousel__face2:nth-child(7) { 
+    background-image: url("../img/logger-mock.png");
    transform: rotateY(240deg) translateZ(430px); }
-  .carousel__face2:nth-child(8) {
-    background-image: url("../img/mock-2.png");
-    transform: rotateY(280deg) translateZ(430px); }
-  .carousel__face2:nth-child(9) {
-    background-image: url("../img/mock-2.png");
-    transform: rotateY(320deg) translateZ(430px); }
+  .carousel__face2:nth-child(8) { 
+    background-image: url("../img/logger-mock.png");
+   transform: rotateY(280deg) translateZ(430px); }
+   .carousel__face2:nth-child(9) { 
+    background-image: url("../img/logger-mock.png");
+   transform: rotateY(320deg) translateZ(430px); }
+ 
 /* OMNI CAROUSEL END */
+
+/* OMNI PROTO START */
+#proto {
+  margin-right: 275px;
+}
+/* OMNI PROTO END */
 
 /* BLONDYS CAROUSEL START */
 .carousel__face3 { 

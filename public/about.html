@@ -70,10 +70,10 @@
                            <li class="menu-item" style="background-image: url(img/bstrap.svg); background-repeat: no-repeat; background-size: cover;">
                            
                            </li>
-                           <li class="menu-item" style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;">
+                           <li class="menu-item" style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;" onclick="adobeSkill()">
                             
                            </li>
-                           <li class="menu-item" style="background-image: url(img/html5.svg); background-repeat: no-repeat; background-size: cover;">
+                           <li class="menu-item" style="background-image: url(img/html5.svg); background-repeat: no-repeat; background-size: cover;" onclick="htmlSkill()">
                               
                                
                            </li>
@@ -298,6 +298,12 @@ function enableScroll() {
     window.onscroll = function() {};
 }
 
+function htmlSkill() {
+    document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> HTML/HTML5 <br/> 2 yrs exp."
+}
+function adobeSkill() {
+    document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Adobe XD <br/> 2 yrs exp."
+}
     </script>
 </body>
 
