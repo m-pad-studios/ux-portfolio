@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Hey there, glad you could make it. My About me is an interactive animated experience. Click your way through to get to know me. See you at the end. Mike Parker." />
+    <meta name="description"
+        content="Hey there, glad you could make it. My About me is an interactive animated experience. Click your way through to get to know me. See you at the end. Mike Parker." />
     <title>Michael Parker Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -18,149 +19,191 @@
 </head>
 
 <body class="d-flex flex-column scrollable" onload="disableScroll()">
-    
+
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav id ="navigation">
+        <nav id="navigation">
             <a href="/">Home</a>
             <a href="about.html" target="_blank">About</a>
             <a class="nav-link active" href="#" style="float: right;" id="mike">Resume</a>
-        
+
         </nav>
 
         <!-- Header-->
-        <header >   
-            
+        <header>
+
             <div class="headline">
-              <div class="inner" id="index-headline">
-        
-    
-   <section id="jumbotron2">
-            <div id = "shade">
-                <h3 id = "jumbotron2-title" style="padding-top: 175px; color: white; font-size:large"> "Hey there, glad you could make it. <br/> My About me is an interactive animated experience. <br/> Click your way through to get to know me. <br/> See you at the end."</h1>
-                <h3 style="color: white;"> - Mike Parker</h3>
-                <div id ="read-more-container">
-                    <h4 id = "read-more"><a href="#skill-set" onclick="enableScroll()">Click me!</a></h4>
-                    <i id ="arrow-down" class="fas fa-arrow-down"></i>
+                <div class="inner" id="index-headline">
+
+
+                    <section id="jumbotron2">
+                        <div id="shade">
+                            <h3 id="jumbotron2-title" style="padding-top: 175px; color: white; font-size:large"> "Hey
+                                there, glad you could make it. <br /> My About me is an interactive animated experience.
+                                <br /> Click your way through to get to know me. <br /> See you at the end."</h1>
+                                <h3 style="color: white;"> - Mike Parker</h3>
+                                <div id="read-more-container">
+                                    <h4 id="read-more"><a href="#skill-set" onclick="enableScroll()">Click me!</a></h4>
+                                    <i id="arrow-down" class="fas fa-arrow-down"></i>
+                                </div>
+                        </div>
+                    </section>
                 </div>
+
+
             </div>
-        </section>
-              </div>
 
-                
-              </div>
-      
-         
-          </header>
 
-   
-          
+        </header>
+
+
+
         <!-- Team members section-->
-        <section class="wave" id="skill-set" style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
+        <section class="wave" id="skill-set"
+            style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
 
-<img src="../img/skills-orb.jpg" style="" id="tear-drop"/>
-           <div class="container">
+            <img src="../img/skills-orb.jpg" id="tear-drop" />
+            <div class="container">
                 <ul id="menu">
-                           <a class="menu-button icon-plus" href="#menu" title="Show navigation" onclick="disableScroll()"></a>
-                           <a class="menu-button icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
+                    <a class="menu-button icon-plus" href="#menu" title="Show navigation" onclick="disableScroll()"></a>
+                    <a class="menu-button icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
 
-                           <li class="menu-item" style="background-image: url(img/code.svg); background-repeat: no-repeat; background-size: cover;">
-                            
-                           </li>
-                           <li class="menu-item" style="background-image: url(img/bstrap.svg); background-repeat: no-repeat; background-size: cover;">
-                           
-                           </li>
-                           <li class="menu-item" style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;" onclick="adobeSkill()">
-                            
-                           </li>
-                           <li class="menu-item" style="background-image: url(img/html5.svg); background-repeat: no-repeat; background-size: cover;" onclick="htmlSkill()">
-                              
-                               
-                           </li>
-                           <li class="menu-item" style="background-image: url(img/css.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/data.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/js.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/django.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/github.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/globe.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/js.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>
-                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>                           
-                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>    
-                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>    
-                        <li class="menu-item" style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;">
-                              
-                               
-                        </li>    
-                        <p style="visibility: hidden; font-size: 12px;
+                    <li class="menu-item"
+                        style="background-image: url(img/code.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="codeSkill()">
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/bstrap.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="bstrapSkill()">
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="adobeSkill()">
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/html5.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="htmlSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/css.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="cssSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/data.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="dataSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/js.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="jsSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/django.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="djangoSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/github.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="githubSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/globe.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="globeSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/python.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="pythonSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/landscape.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="landscapeSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/node.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="nodeSkill()">
+
+
+                    </li>
+                    <li class="menu-item"
+                        style="background-image: url(img/mobile.svg); background-repeat: no-repeat; background-size: cover;"
+                        onclick="mobileSkill()">
+
+
+                    </li>
+                    <p style="visibility: hidden; font-size: 16px;
                         color: black;
                         z-index: 1;
                         position: fixed;
-                        margin-right: 42px;" id="instructions-skill-orb">Click orb again to scroll further down!</p>
+                        right: 10px;
+                        bottom: 75px;
+                        font-family: Oswald;" id="instructions-skill-orb">Click orb again to scroll further down!</p>
 
-                       </ul>
-                 
-           </div>
-        
+                </ul>
 
-           <img src="../img/pad.jpg" id="pad"/>
-   
-      
+            </div>
+
+
+            <img src="../img/pad.jpg" id="pad" />
+
+
         </section>
         <!-- Team members section-->
-        <section class="wave" id="skill-set" style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
-           
+        <section class="wave" id="skill-set"
+            style="margin-top: -20px; background-image: linear-gradient(to bottom, #ffffff, #ffff); overflow: hidden;">
+
             <div class="container">
-                            <ul id="menu2">
-                                       <a class="menu-button2 icon-plus" href="#menu2" title="Show navigation" onclick="disableScroll()"></a>
-                                       <a class="menu-button2 icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
-                                       <li class="menu-item2" style="background-image: url(img/code.svg); background-repeat: no-repeat; background-size: cover;">
-                                        
-                                       </li>
-                                       <li class="menu-item2" style="background-image: url(img/bstrap.svg); background-repeat: no-repeat; background-size: cover;">
-                                       
-                                       </li>
-                                       <li class="menu-item2" style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;">
-                                        
-                                       </li>
-                                
-                                   </ul>
-                             
-                    
-                       </div>
-                               
-                      
-            
-                    </section>
+                <ul id="menu2">
+                    <a class="menu-button2 icon-plus" href="#menu2" title="Show navigation"
+                        onclick="disableScroll()"></a>
+                    <a class="menu-button2 icon-minus" href="#0!" title="Hide navigation" onclick="enableScroll()"></a>
+                    <li class="menu-item2"
+                        style="background-image: url(img/figma.svg); background-repeat: no-repeat; background-size: cover;" onclick="figmaSkill()">
+
+                    </li>
+                    <li class="menu-item2"
+                        style="background-image: url(img/visual.svg); background-repeat: no-repeat; background-size: cover;" onclick="visualSkill()">
+
+                    </li>
+                    <li class="menu-item2"
+                        style="background-image: url(img/adobe.svg); background-repeat: no-repeat; background-size: cover;" onclick="adobexdSkill()">
+
+                    </li>
+                    <p style=" font-size: 15px;
+                                       color: black;
+                                       z-index: 1;
+                                       position: fixed;
+                                       right: 30px;
+                                       left: 15px;
+                                       bottom: 55px;
+                                       font-family: Oswald;" id="instructions-skill-box">Click orb again to scroll
+                        further down!</p>
+                </ul>
+
+
+            </div>
+
+
+
+        </section>
 
 
     </main>
@@ -186,124 +229,229 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/resume.js"></script>
-<script >
-  
-var $headline = $('.headline'),
-        $inner = $('.inner'),
-        $nav = $('nav'),
-        navHeight = 75;
-    
-    $(window).scroll(function() {
-      var scrollTop = $(this).scrollTop(),
-          headlineHeight = $headline.outerHeight() - navHeight,
-          navOffset = $nav.offset().top;
-    
-      $headline.css({
-        'opacity': (1 - scrollTop / headlineHeight)
-      });
-      $inner.children().css({
-        'transform': 'translateY('+ scrollTop * 0.4 +'px)'
-      });
-      if (navOffset > headlineHeight) {
-        $nav.addClass('scrolled');
-      } else {
-        $nav.removeClass('scrolled');
-      }
-    });
-    
-    
-            $(function () {  // $(document).ready shorthand
-                $('.skills').fadeIn('slow');
+    <script>
+
+        var $headline = $('.headline'),
+            $inner = $('.inner'),
+            $nav = $('nav'),
+            navHeight = 75;
+
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop(),
+                headlineHeight = $headline.outerHeight() - navHeight,
+                navOffset = $nav.offset().top;
+
+            $headline.css({
+                'opacity': (1 - scrollTop / headlineHeight)
             });
-    
-            $(document).ready(function () {
-    
-                /* Every time the window is scrolled ... */
-                $(window).scroll(function () {
-    
-                    /* Check the location of each desired element */
-                    $('.hideme').each(function (i) {
-    
-                        var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                        var bottom_of_window = $(window).scrollTop() + $(window).height();
-    
-                        /* If the object is completely visible in the window, fade it it */
-                        if (bottom_of_window > bottom_of_object) {
-    
-                            $(this).animate({ 'opacity': '1' }, 1500);
-    
-                        }
-    
-                    });
-    
+            $inner.children().css({
+                'transform': 'translateY(' + scrollTop * 0.4 + 'px)'
+            });
+            if (navOffset > headlineHeight) {
+                $nav.addClass('scrolled');
+            } else {
+                $nav.removeClass('scrolled');
+            }
+        });
+
+
+        $(function () {  // $(document).ready shorthand
+            $('.skills').fadeIn('slow');
+        });
+
+        $(document).ready(function () {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function () {
+
+                /* Check the location of each desired element */
+                $('.hideme').each(function (i) {
+
+                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({ 'opacity': '1' }, 1500);
+
+                    }
+
                 });
-    
+
             });
 
-            function paddingTop(a,b){
-	  var sectionHeight = a.height();
-	  var contentHeight = b.height();
-	  var equation = (sectionHeight/2 ) - (contentHeight/2);
-	   b.css('padding-top', equation);
-	}
-	 
-	 paddingTop($('#about-container'), $('#about-testimonial'));
+        });
+
+        function paddingTop(a, b) {
+            var sectionHeight = a.height();
+            var contentHeight = b.height();
+            var equation = (sectionHeight / 2) - (contentHeight / 2);
+            b.css('padding-top', equation);
+        }
+
+        paddingTop($('#about-container'), $('#about-testimonial'));
 
 
-	$(window).on('resize', function(){
-	
-	 paddingTop($('#about-container'), $('#about-testimonial'));
-	});
+        $(window).on('resize', function () {
 
-//Below is for fixed Nav activation
-function activateFixedNav(){
-		if($("#navigation").offset().top > 100){
-			console.log('IT works');
-			$("#navigation").addClass("active-nav");
+            paddingTop($('#about-container'), $('#about-testimonial'));
+        });
 
-		}else{
-			$("#navigation").removeClass("active-nav");
-		}
+        //Below is for fixed Nav activation
+        function activateFixedNav() {
+            if ($("#navigation").offset().top > 100) {
+                console.log('IT works');
+                $("#navigation").addClass("active-nav");
 
-	}
-		
-activateFixedNav();
+            } else {
+                $("#navigation").removeClass("active-nav");
+            }
 
-	
-$(window).on('scroll', function(){
-		
-		activateFixedNav();
-	
-	});
+        }
 
-console.log($("#about-container").offset().top);
+        activateFixedNav();
 
-function disableScroll() {
-    
-    document.getElementById('instructions-skill-orb').style.visibility = "visible";
 
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-  
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-  
-function enableScroll() {
-    document.getElementById('instructions-skill-orb').style.visibility = "hidden";
+        $(window).on('scroll', function () {
 
-    window.onscroll = function() {};
-}
+            activateFixedNav();
 
-function htmlSkill() {
-    document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> HTML/HTML5 <br/> 2 yrs exp."
-}
-function adobeSkill() {
-    document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Adobe XD <br/> 2 yrs exp."
-}
+        });
+
+        console.log($("#about-container").offset().top);
+
+        function disableScroll() {
+
+            document.getElementById('instructions-skill-orb').style.visibility = "visible";
+
+            // Get the current page scroll position
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+
+        function enableScroll() {
+            document.getElementById('instructions-skill-orb').style.visibility = "hidden";
+
+            window.onscroll = function () { };
+        }
+
+        function htmlSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> HTML/HTML5 <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.right = '25px'
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function adobeSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Adobe XD <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.right = '40px'
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function codeSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Front End Development <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.right = '-10px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+            document.getElementById('instructions-skill-orb').style.bottom = '50px'
+        }
+        function bstrapSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Bootstrap <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function cssSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> CSS <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function dataSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> SQLite3 <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function jsSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> JavaScript <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function djangoSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Django <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function githubSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> GitHub <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function globeSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Web Development <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '60px'
+            document.getElementById('instructions-skill-orb').style.right = '10px'
+            document.getElementById('instructions-skill-orb').style.left = '0px'
+
+
+
+        }
+        function pythonSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Python <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function landscapeSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> UX Design <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function nodeSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Node.JS <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.bottom = '75px'
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+        }
+        function mobileSkill() {
+            document.getElementById('instructions-skill-orb').innerHTML = "<br/><br/> Mobile Development <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-orb').style.left = '25px'
+
+            document.getElementById('instructions-skill-orb').style.bottom = '50px'
+
+        }
+        function figmaSkill() {
+            document.getElementById('instructions-skill-box').innerHTML = "<br/><br/> Figma: wireframing & prototyping <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-box').style.left = '25px'
+
+            document.getElementById('instructions-skill-box').style.bottom = '35px'
+
+        }
+        function visualSkill() {
+            document.getElementById('instructions-skill-box').innerHTML = "<br/><br/> Visual Studio Code <br/> 2 yrs exp."
+            document.getElementById('instructions-skill-box').style.left = '25px'
+
+            document.getElementById('instructions-skill-box').style.bottom = '50px'
+
+        }
+        function adobexdSkill() {
+            document.getElementById('instructions-skill-box').innerHTML = "<br/><br/> Adobe XD: 3D mockups <br/> 1 yr exp."
+            document.getElementById('instructions-skill-box').style.left = '25px'
+
+            document.getElementById('instructions-skill-box').style.bottom = '50px'
+
+        }
     </script>
 </body>
 
