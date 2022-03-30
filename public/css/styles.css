@@ -12263,7 +12263,7 @@ span {
 /* CAROUSEL END */
 
 /* Extra small devices (phones, 365px and down) */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 390px) {
   .carousel {
 
     width: 100%;
@@ -12407,7 +12407,7 @@ width: 99%;
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
  
   #sign{
     width: 99%;
