@@ -11788,10 +11788,10 @@ box-shadow: 0 5px 10px black;
 }
 
 .menu-button3 {
-  width: 375px;
+  width: 275px;
   height: 250px;
   position: absolute;
-  /* left: 57%; */
+  left: 48%;
   top: 55%;
   margin: -101px 0 0 -107px;
   border-radius: 18%;
@@ -12262,8 +12262,8 @@ span {
 
 /* CAROUSEL END */
 
-/* Extra small devices (phones, 400px and down) */
-@media only screen and (max-width: 450px) {
+/* Extra small devices (phones, 365px and down) */
+@media only screen and (max-width: 300px) {
   .carousel {
 
     width: 100%;
